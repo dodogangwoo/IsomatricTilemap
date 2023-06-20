@@ -12,7 +12,6 @@ public class PlayerMovement : MonoBehaviour
     private float moveH, moveV;
     private PlayerAnimation playerAnimation;    
     public float moveSpeed = 1.0f;
-    /*public Tilemap tilemap;*/
     public string TargetObjectName;
     public string TargetObjectName2;
     public float speedIncreaseAmount = 5f;
@@ -27,13 +26,7 @@ public class PlayerMovement : MonoBehaviour
     {
         moveH = Input.GetAxis("Horizontal");
         moveV = Input.GetAxis("Vertical");
-        /*if (tilemap.GetTile(tilemap.WorldToCell(transform.position)))
-        {
-            if (tilemap.GetTile(tilemap.WorldToCell(transform.position)).name == "cave-sliced_21")
-            {
-                transform.position = pos;
-            }
-        }*/
+       
     }
 
     private void FixedUpdate()
@@ -61,3 +54,16 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 }
+
+
+
+/*if (tilemap.GetTile(tilemap.WorldToCell(transform.position)))
+       {
+           if (tilemap.GetTile(tilemap.WorldToCell(transform.position)).name == "cave-sliced_21")
+           {
+               transform.position = pos;
+           }
+       }*/
+/*adaafdadadfaf*/
+       
+/*public Tilemap tilemap;*/
